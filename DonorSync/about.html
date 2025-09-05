@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Donorsync</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/picpicture/assets/pic.picture.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+       
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 style="color:red"><i class="fas fa-star-of-life me-3"></i>DONORSYNC</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link active">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Bloodcare</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="donateblood.html" class="dropdown-item">Donate Blood</a>
+                                <a href="searchforblood.html" class="dropdown-item">Search for Blood</a>
+                            </div>
+                        </div>
+                        <a href="feedback.html" class="nav-item nav-link">Feedback</a>
+                    </div>
+                    <a href="joinus.html" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Join us</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Header Start --><br/><br/><br/><br/>
+        <div class="container-fluid bg-breadcrumb" >
+            <div class="container text-center py-5" style="max-width: 800px;">
+               
+                
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- About Start -->
+        <div class="container-fluid about bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-img pb-5 ps-5">
+                            <img src="data:image/png;base64,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" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="section-title text-start mb-5">
+                            <h4 class="sub-title pe-3 mb-0">About Us</h4>
+                            <h1 class="display-3 mb-4">Welcome to Our Mission</h1>
+                            <p class="mb-4">Greetings from Donor Sync's life-saving community. Established in 2024, our mission is to alleviate blood shortages and save lives by facilitating the connection between kind donors and those in need. We provide a simple and effective platform for blood donation and receiving through our website.
+
+                                The idea that everyone should have access to safe blood drives our purpose. Our goal is to make giving blood an easy, approachable act of compassion that anybody can take part in. Come along on our mission to guarantee that each patient gets the gift of life when they need it.
+                                
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Feature Start -->
+        <div class="container-fluid feature py-5">
+            <div class="container py-5">
+                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
+                    </div>
+                    <h1 class="display-3 mb-4">Help Save Lives and Strengthen Your Community</h1>
+                    <p class="mb-0">Efforts in blood donation are crucial and lifesaving. Every pint of blood donated can save up to three lives, and our dedicated team ensures that your generous contribution reaches those in urgent need as efficiently as possible.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="row-cols-1 feature-item p-4">
+                            <div class="col-12">
+                                <div class="feature-icon mb-4">
+                                    <div class="p-3 d-inline-flex bg-white rounded">
+                                        <i class="fas fa-diagnoses fa-4x text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-4">Goal-Oriented Approach</h5>
+                                    <p class="mb-0">We aim to fulfill urgent blood demands, directly impacting lives with each donation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="row-cols-1 feature-item p-4">
+                            <div class="col-12">
+                                <div class="feature-icon mb-4">
+                                    <div class="p-3 d-inline-flex bg-white rounded">
+                                        <i class="fas fa-briefcase-medical fa-4x text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-4">Personalized Donation Experience</h5>
+                                    <p class="mb-0">Each donor receives individual attention and care tailored to their specific needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row-cols-1 feature-item p-4">
+                            <div class="col-12">
+                                <div class="feature-icon mb-4">
+                                    <div class="p-3 d-inline-flex bg-white rounded">
+                                        <i class="fas fa-hospital-user fa-4x text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-4">Privacy and Confidentiality</h5>
+                                    <p class="mb-0">We strictly adhere to all privacy and security laws to fully protect your personal information
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="row-cols-1 feature-item p-4">
+                            <div class="col-12">
+                                <div class="feature-icon mb-4">
+                                    <div class="p-3 d-inline-flex bg-white rounded">
+                                        <i class="fas fa-users fa-4x text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-4">Social Media Engagement</h5>
+                                    <p class="mb-0">Active presence on social media to provide updates, engage with donors, and promote campaigns.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">                 
+                        <div class="footer-item d-flex flex-column">
+                           <center><a href="">Donor Sync © 2024. Join us in saving lives, one donation at a time.</a></center>
+                           <center> <h3 class="mb-4 text-white"style="color:white;">Contact Us</h3></center>
+                           <center><a href=""><i class="fas fa-envelope me-2"></i> Email: donorsync@gmail.com</a></center>
+                           <center><a href=""><i class="fas fa-phone me-2"></i> Phone: 123-456-7890</a></center>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://x.com/donor_sync?t=1_tLuooAJgh77HuFQEnHGw&s=08"><i class="fab fa-twitter"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/donor_sync?utm_source=qr&igsh=MzNkNXh3a3RlZmsx"><i class="fab fa-instagram"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/picpicture/pic.picture.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        
+    </body>
+
+</html>

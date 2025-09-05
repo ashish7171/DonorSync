@@ -1,0 +1,170 @@
+/**
+ * pic picture v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ *  pic picture - Core
+ */
+.pic-picture {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  .pic-picture .pic-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+  .pic-picture .pic-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .pic-picture .pic-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .pic-picture .pic-wrapper,
+  .pic-picture .pic-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); }
+  .pic-picture .pic-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .pic-picture .pic-item img {
+    display: block;
+    width: 100%; }
+  .pic-picture .pic-nav.disabled,
+  .pic-picture .pic-dots.disabled {
+    display: none; }
+  .pic-picture .pic-nav .pic-prev,
+  .pic-picture .pic-nav .pic-next,
+  .pic-picture .pic-dot {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .pic-picture.pic-loaded {
+    display: block; }
+  .pic-picture.pic-loading {
+    opacity: 0;
+    display: block; }
+  .pic-picture.pic-hidden {
+    opacity: 0; }
+  .pic-picture.pic-refresh .pic-item {
+    visibility: hidden; }
+  .pic-picture.pic-drag .pic-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .pic-picture.pic-grab {
+    cursor: move;
+    cursor: grab; }
+  .pic-picture.pic-rtl {
+    direction: rtl; }
+  .pic-picture.pic-rtl .pic-item {
+    float: right; }
+
+/* No Js */
+.no-js .pic-picture {
+  display: block; }
+
+/*
+ *  pic picture - Animate Plugin
+ */
+.pic-picture .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both; }
+
+.pic-picture .pic-animated-in {
+  z-index: 0; }
+
+.pic-picture .pic-animated-out {
+  z-index: 1; }
+
+.pic-picture .fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*
+ * 	pic picture - Auto Height Plugin
+ */
+.pic-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	pic picture - Lazy Load Plugin
+ */
+.pic-picture .pic-item .pic-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease; }
+
+.pic-picture .pic-item img.pic-lazy {
+  transform-style: preserve-3d; }
+
+/*
+ * 	pic picture - Video Plugin
+ */
+.pic-picture .pic-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+.pic-picture .pic-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("pic.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease; }
+
+.pic-picture .pic-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+      transform: scale(1.3, 1.3); }
+
+.pic-picture .pic-video-playing .pic-video-tn,
+.pic-picture .pic-video-playing .pic-video-play-icon {
+  display: none; }
+
+.pic-picture .pic-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease; }
+
+.pic-picture .pic-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }

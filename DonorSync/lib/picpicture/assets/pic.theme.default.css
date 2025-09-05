@@ -1,0 +1,50 @@
+/**
+ * pic picture v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - pic picture CSS File
+ */
+.pic-theme .pic-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .pic-theme .pic-nav [class*='pic-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; }
+    .pic-theme .pic-nav [class*='pic-']:hover {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; }
+  .pic-theme .pic-nav .disabled {
+    opacity: 0.5;
+    cursor: default; }
+
+.pic-theme .pic-nav.disabled + .pic-dots {
+  margin-top: 10px; }
+
+.pic-theme .pic-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .pic-theme .pic-dots .pic-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .pic-theme .pic-dots .pic-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .pic-theme .pic-dots .pic-dot.active span, .pic-theme .pic-dots .pic-dot:hover span {
+      background: #869791; }
